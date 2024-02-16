@@ -75,14 +75,27 @@
                       </div>
                     </div>
                   </div>
-                <!--  -->
+                <!-- Rhombus -->
                 <div class="card  bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                    <figure><img src="images/rhombus.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                      <h2 class="card-title">Rhombus</h2>
+                      <p class="text-center">Area:o.5 X <span>d<sub>1</sub></span>X <span>d<sub>2</sub></span></p>
+
+                      <!-- input field -->
+                      <div>
+                        
+                        <input id='rhombus-width'class="w-24 text-2xl rounded-sm p-2 bg-slate-100" type="text"placeholder="w">
+  
+                        <span class="mr-4 ml-2">cm</span>
+                        <input class="w-24 text-2xl p-2 bg-slate-100"type="text" name="" id="rhombus-length" placeholder="l">
+                        <span>cm</span>
+                        </div>
+                        <!-- for display area -->
+                        <p class="text-2xl">Area <span id="rhombus-area"></span><span>cm<sup>2</sup></span></p>
+
+                      <div class="card-actions ">
+                        <button onclick="calculateRhombusArea()" class="btn btn-primary w-full">calculate</button>
                       </div>
                     </div>
                   </div>
@@ -129,6 +142,7 @@
     <script src="scripts/triangleCalculate.js"></script>
     <script src="scripts/recArea.js"></script>
     <script src="scripts/commonFunction.js"></script>
+    <script src="scripts/rhombus.js"></script>
     
 </body>
 </html>
