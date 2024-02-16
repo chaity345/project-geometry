@@ -75,7 +75,7 @@
                       </div>
                     </div>
                   </div>
-                <!-- triangle -->
+                <!--  -->
                 <div class="card  bg-base-100 shadow-xl">
                     <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
                     <div class="card-body">
@@ -86,14 +86,31 @@
                       </div>
                     </div>
                   </div>
-                <!-- triangle -->
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                <!-- Parallelogram -->
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                      <h2 class="card-title">Parallelogram</h2>
+                      <p class="text-center">Area (A) = bXh</p>
+                      <div>
+                        <!-- base input field -->
+                        <input id='parallelogram-base'class="w-24 text-2xl p-2 rponded-sm bg-slate-300" type="text" placeholder="b">
+                      <span class="mr-4 ml-2">cm</span>
+                      <!-- height input field -->
+
+                      <input  class="w-24 text-2xl p-2 rponded-sm bg-slate-300" type="text" name="" id="parallelogram-height" placeholder="h">
+                      <span class="">cm</span>
+
+                      </div>
+                      <!-- display the area -->
+                      <div>
+                        <p class="text-2xl ">Area <span id="parallelogram-area"></span><span>cm<sup>2</sub></span></p>
+                      </div>
+                      
+
+
+                      <div class="card-actions ">
+                        <button onclick='calculateParallelogramArea()'class="btn btn-primary w-full">calculate</button>
                       </div>
                     </div>
                   </div>
@@ -111,6 +128,7 @@
     <!-- link for JC connected -->
     <script src="scripts/triangleCalculate.js"></script>
     <script src="scripts/recArea.js"></script>
+    <script src="scripts/commonFunction.js"></script>
     
 </body>
 </html>
